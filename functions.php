@@ -1,4 +1,15 @@
 <?php 
+add_theme_support('menus');
+add_theme_support('widgets');
+
+function register_theme_menus(){
+	register_nav_menus(
+		array(
+			'main-menu' => __('Main Menu')
+		)
+	);
+}
+add_action('init', 'register_theme_menus');
 
 //Namespace: tjj 
 function tjj_theme_styles(){
@@ -14,7 +25,7 @@ function tjj_theme_js(){
 	//Params: name, link_to_file, dependent_files (array), set verison, appear in footer (boolean)
 	wp_enqueue_script('modernizr_js', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/vendor/modernizr.js', '','',false);
 	wp_enqueue_script('foundation_js', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js', array('jquery'),'',true);
-	wp_enqueue_script('main_js', get_template_directory_uri('/js/app.js'), array('jquery', 'foundation'),'',true);
+	wp_enqueue_script('app_js', get_template_directory_uri(). '/js/app.js', array('jquery', 'foundation_js'),'',true);
 }
 add_action('wp_enqueue_scripts','tjj_theme_js');
 ?>
