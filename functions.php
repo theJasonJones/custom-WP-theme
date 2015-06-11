@@ -4,8 +4,8 @@
 function tjj_theme_styles(){
 	//for local files use 'get_template_directory_uri() . /folder/file_name.css'
 	wp_enqueue_style('foundation_css', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css');
-	wp_enqueue_style('normalize_css', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css');
-	wp_enqueue_style('normalize_css', 'http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
+	//wp_enqueue_style('normalize_css', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/normalize.min.css');
+	wp_enqueue_style('googlefont_css', 'http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
 	wp_enqueue_style('main_css', get_template_directory_uri(). '/style.css');
 }
 add_action('wp_enqueue_scripts', 'tjj_theme_styles');
