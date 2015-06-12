@@ -24,7 +24,7 @@
 	                </ul>
 	                <?php if( get_the_post_thumbnail() ): ?>
 	                <div class="img-container">
-	                  <img src="<?php the_post_thumbnail('large'); ?>" alt="">
+	                  <?php the_post_thumbnail('large'); ?>
 	                </div>
 	            	<?php endif; ?>
                 </article>
