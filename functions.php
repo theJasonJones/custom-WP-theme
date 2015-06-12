@@ -3,6 +3,12 @@ add_theme_support('menus');
 add_theme_support('widgets');
 add_theme_support( 'post-thumbnails' );
 
+function tjj_excerpt_length( $length ){
+	return 16;
+}
+//last param makes the fucntion execute later
+add_filter( 'excerpt_length', 'tjj_excerpt_length', 999);
+
 function register_theme_menus(){
 	register_nav_menus(
 		array(
