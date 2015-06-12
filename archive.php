@@ -38,11 +38,7 @@
 	  		</div>
 	    </div>
     </div>
-<!-- Secondary Column -->
-	<div class="small-12 medium-4 medium-pull-8 columns">
-	    <div class="secondary">
-	      <h2 class="module-heading">Sidebar</h2>
-	    </div>
-	</div>
+    <?php get_sidebar(); ?>
+
 </section>
 <?php get_footer(); ?>

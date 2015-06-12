@@ -32,8 +32,8 @@ function tjj_create_widget( $name, $id, $description ) {
 
 }
 
-wpt_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
-wpt_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+tjj_create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
+tjj_create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 
 //Namespace: tjj 
 function tjj_theme_styles(){
