@@ -1,2 +1,3 @@
 # custom-WP-theme
-Building a WordPress theme from scratch. 
+
+This WordPress theme was built from scratch using the [Foundation framework](http://foundation.zurb.com/). 
