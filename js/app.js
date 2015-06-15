@@ -1,3 +1,4 @@
+//Include jQuery no conflict wrapper
 jQuery(document).ready(function($){ 
 	//Include nav logic
 	$( ".nav-toggle" ).click(function() {
@@ -7,6 +8,6 @@ jQuery(document).ready(function($){
 	  return false;
 	});
 
-	//Fondation
+	//Foundation
 	$(document).foundation();
 });		
